@@ -1,4 +1,4 @@
-package com.example.pet.dao.service;
+package com.example.pet.service;
 
 import com.example.pet.dao.entity.Socks;
 import com.example.pet.dao.repository.SocksRepository;

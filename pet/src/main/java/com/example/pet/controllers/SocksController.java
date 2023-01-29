@@ -1,7 +1,7 @@
-package com.example.pet.dao.controllers;
+package com.example.pet.controllers;
 
 import com.example.pet.dao.entity.Socks;
-import com.example.pet.dao.service.SocksService;
+import com.example.pet.service.SocksService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
