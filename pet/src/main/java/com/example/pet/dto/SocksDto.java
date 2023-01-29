@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-class SocksDto {
+public class SocksDto {
     private Long id;
     private String color;
     private Integer colorPart;
