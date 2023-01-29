@@ -1,0 +1,6 @@
+{
+  "timestamp": "2023-01-29T07:42:30.132+00:00",
+  "status": 500,
+  "error": "Internal Server Error",
+  "path": "/socks"
+}
