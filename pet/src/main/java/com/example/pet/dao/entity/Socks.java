@@ -18,6 +18,6 @@ public class Socks {
 
     @Column(name = "color")
     private String color;
-    @Column(name = "cotton_part")
+    @Column(name = "cottonPart")
     private Integer cottonPart;
 }

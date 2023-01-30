@@ -1,3 +1,60 @@
+POST http://localhost:8080/socks
+Content-Type: application/json
+Content-Length: 41
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "color": "red",
+  "colorPart": "80"
+}
+
+<> 2023-01-30T211927.500.json
+
+###
+
+POST http://localhost:8080/socks
+Content-Type: application/json
+Content-Length: 41
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "color": "red",
+  "colorPart": "80"
+}
+
+<> 2023-01-30T211744.500.json
+
+###
+
+POST http://localhost:8080/socks
+{:
+"color": "red",
+"colorPart": 20,
+}:
+<> 2023-01-30T205846.500.json:
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-01-30T210003.400.html
+
+###
+
+POST http://localhost:8080/socks
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-01-30T205846.500.json
+
+###
+
 GET http://localhost:8080/socks
 Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
