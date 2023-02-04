@@ -4,6 +4,7 @@ import com.example.pet.dao.entity.Socks;
 import com.example.pet.dto.SocksDto;
 import com.example.pet.mapper.SocksMapper;
 import com.example.pet.service.SocksService;
+import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,8 +33,7 @@ public class SocksController {
     }
 
     @PostMapping("/socks")
-    public SocksDto create(@RequestBody SocksDto socksDto){
-        System.out.println(mapper.toEntity(socksDto));
+    public SocksDto create(@Valid @RequestBody SocksDto socksDto){
         Socks socks = service.save(mapper.toEntity(socksDto));
         return mapper.toDto(socks);
     }
