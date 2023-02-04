@@ -29,4 +29,14 @@ public class SocksService {
     public Socks findByColorAndCottonPart(String color, Integer cottonPart){
         return repository.findByColorAndCottonPart(color, cottonPart);
     }
+
+    public List<Socks>  findAllByColorAndCottonPartGreaterThan(String color, Integer cottonPart){
+        return repository.findAllByColorAndCottonPartGreaterThan(color, cottonPart);
+    }
+    public List<Socks>  findAllByColorAndCottonPartLessThan(String color, Integer cottonPart){
+        return repository.findAllByColorAndCottonPartLessThan(color, cottonPart);
+    }
+    public List<Socks>  findAllByColorAndCottonPartEquals(String color, Integer cottonPart){
+        return repository.findAllByColorAndCottonPartEquals(color, cottonPart);
+    }
 }
