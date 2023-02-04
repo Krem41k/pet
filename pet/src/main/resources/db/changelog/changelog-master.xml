@@ -16,5 +16,9 @@
             <column name="cotton_part" type="INTEGER"/>
         </createTable>
     </changeSet>
-
+    <changeSet id="add-new-column-quantity" author="KremyanskyDY">
+        <addColumn tableName="socks"  schemaName="socks">
+            <column name="quantity" type="INTEGER"/>
+        </addColumn>
+    </changeSet>
 </databaseChangeLog>

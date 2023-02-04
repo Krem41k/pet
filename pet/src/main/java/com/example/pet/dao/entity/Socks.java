@@ -20,4 +20,7 @@ public class Socks {
     private String color;
     @Column(name = "cottonPart")
     private Integer cottonPart;
+
+    @Column(name = "quantity")
+    private Integer quantity;
 }
