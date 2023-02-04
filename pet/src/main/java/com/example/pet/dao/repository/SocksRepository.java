@@ -6,4 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface SocksRepository extends JpaRepository<Socks, Long> {
+    public Socks findByColorAndCottonPart(String color, Integer cottonPart);
 }

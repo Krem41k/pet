@@ -25,4 +25,8 @@ public class SocksService {
     public Socks save(Socks socks){
         return repository.save(socks);
     }
+
+    public Socks findByColorAndCottonPart(String color, Integer cottonPart){
+        return repository.findByColorAndCottonPart(color, cottonPart);
+    }
 }

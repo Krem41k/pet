@@ -37,4 +37,20 @@ public class SocksController {
         Socks socks = service.save(mapper.toEntity(socksDto));
         return mapper.toDto(socks);
     }
+
+    @PostMapping("/socks/income")
+    public SocksDto income(@Valid @RequestBody SocksDto socksDto){
+        Socks socksIncome = mapper.toEntity(socksDto);
+        Socks oldSocks = service.findByColorAndCottonPart(socksIncome.getColor(), socksIncome.getCottonPart());
+        oldSocks.setQuantity(oldSocks.getQuantity() + socksIncome.getQuantity());
+        return mapper.toDto(service.save(oldSocks));
+    }
+
+    @PostMapping("/socks/outcome")
+    public SocksDto outcome(@Valid @RequestBody SocksDto socksDto){
+        Socks socksIncome = mapper.toEntity(socksDto);
+        Socks oldSocks = service.findByColorAndCottonPart(socksIncome.getColor(), socksIncome.getCottonPart());
+        oldSocks.setQuantity(oldSocks.getQuantity() - socksIncome.getQuantity());
+        return mapper.toDto(service.save(oldSocks));
+    }
 }
