@@ -1,0 +1,13 @@
+version: '1'
+
+services:
+  postgres:
+    image: 'postgres'
+    container_name: 'my-postgres'
+    ports:
+      - 15432:5432
+    environment:
+        - 'POSTGRES_USER=demo'
+        - 'POSTGRES_PASSWORD=demo'
+        - 'POSTGRES_DB=socks'
+    restart: unless-stopped
