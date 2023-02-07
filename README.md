@@ -1,6 +1,6 @@
 # pet
  
-Для запуска приложения на локальной машине необходимо создать схему 'socks'
+**Для запуска приложения на локальной машине необходимо создать схему 'socks'**
 
 В приложении доступен следующий список URL HTTP-методов:
 
@@ -14,4 +14,4 @@
 
 3) GET /api/socks
 
-![image](https://user-images.githubusercontent.com/87601709/217282711-ba1e7724-9aae-4df1-a517-d4041fa1aa73.png)
+![image](https://user-images.githubusercontent.com/87601709/217282944-1f4ca077-0314-4c29-913d-7281887fcb70.png)
