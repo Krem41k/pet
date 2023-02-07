@@ -28,8 +28,11 @@ public class SocksController {
             case "lessThan"-> service.findAllByColorAndCottonPartLessThan(color, cottonPart);
             case "moreThan" -> service.findAllByColorAndCottonPartGreaterThan(color, cottonPart);
             case "equal" -> service.findAllByColorAndCottonPartEquals(color, cottonPart);
-            default -> new ArrayList<>();
+            default -> null;
         };
+        if (socks == null)
+            return ResponseEntity.badRequest().body("Неверные параметры запроса");
+
         int sum = socks.stream()
                 .map(mapper::toDto)
                 .mapToInt(SocksDto::getQuantity)

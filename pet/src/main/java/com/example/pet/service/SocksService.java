@@ -15,13 +15,6 @@ import java.util.Optional;
 public class SocksService {
     private final SocksRepository repository;
 
-    public List<Socks> findAll(){
-        return repository.findAll();
-    }
-
-    public Optional<Socks> findById(Long id){
-        return repository.findById(id);
-    }
     public Socks save(Socks socks){
         return repository.save(socks);
     }
